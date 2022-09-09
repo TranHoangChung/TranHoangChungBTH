@@ -13,19 +13,21 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PTPMQL\\TranHoangChung\\TranHoangChung.csproj",
+      "projectUniqueName": "D:\\PTPMQL\\TranHoangChungBTH\\TranHoangChung.csproj",
       "projectName": "TranHoangChung",
-      "projectPath": "D:\\PTPMQL\\TranHoangChung\\TranHoangChung.csproj",
+      "projectPath": "D:\\PTPMQL\\TranHoangChungBTH\\TranHoangChung.csproj",
       "packagesPath": "C:\\Users\\HC\\.nuget\\packages\\",
-      "outputPath": "D:\\PTPMQL\\TranHoangChung\\obj\\",
+      "outputPath": "D:\\PTPMQL\\TranHoangChungBTH\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\HC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
