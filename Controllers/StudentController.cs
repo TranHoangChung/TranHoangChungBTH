@@ -23,10 +23,10 @@ namespace TRANHOANGCHUNGBTH.Controllers;
     [HttpPost]
     public IActionResult Create(Student std)
     {
-        //string message = std.Student + "-";
-        //message += std.StudentName + "-";
-        //message += std.Age;
-        //ViewBag.TT = message;
+        string message = std.StudentID + "-";
+        message += std.StudentName + "-";
+        message += std.Age;
+        ViewBag.TT = message;
         return View();
     }
 }

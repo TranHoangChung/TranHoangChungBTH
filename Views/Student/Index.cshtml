@@ -1,24 +1,37 @@
 @using TRANHOANGCHUNGBTH.Models
+<h2>Thông tin sinh viên: @ViewBag.mess</h2>
+<form asp-action="Index">
+    <label>ID SV: </label>
+    <input type="number" name="StudentID">
+    <br>
+    <label>Họ tên SV: </label>
+    <input type="text" name="StudentName">
+    <br>
+    <label>Tuổi: </label>
+    <input type="text" name="StudentAge">
+    <br>
+    <input class="btn btn-danger" type="submit" value="Save">
+</form>
 <h2>Danh sach sinh vien</h2>
 <hr>
 <table class="table border">
     <tr>
         <th>
-            <label>Student ID</label>
+            <label>Ma sinh vien</label>
         </th>
         <th>
-            <label>Student Name</label>
+            <label>Ten sinh vien</label>
         </th>
         <th>
-            <label>Student Age</label>
+            <label>Tuoi</label>
         </th>
     </tr>
-@foreach (var item in ViewData["Students"]as List<Student>)
-{
-   <tr>
-        <td>@item.StudentID</td>
-        <td>@item.StudentName</td>
-        <td>@item.Age</td>
-   </tr> 
-}
+    @foreach (var item in ViewData["Students"] as List<Student>)
+        {
+            <tr>
+               <td>@item.StudentID</td>
+               <td>@item.StudentName</td>
+               <td>@item.Age</td> 
+            </tr>
+        }
 </table>

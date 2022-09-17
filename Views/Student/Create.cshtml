@@ -1,13 +1,14 @@
+<h2>Create new Student</h2>
 <form asp-action="Create">
-    <label> Mã sinh viên:</label>
-    <input type="number" name="StudentID" value="1">
+    <label>Studnet ID</label>
+    <input type="number" name="StudentID">
     <br>
-    <label>Họ tên sinh viên:</label>
-    <input type="text" name="StudentName" value="Nguyen Van A">
+    <label>Studnet Name</label>
+    <input type="text" name="StudentName">
     <br>
-    <label>Tuổi:</label>
-    <input type="number" name="StudentAge" value="18">
+    <label>Age</label>
+    <input type="number" name="Age">
     <br>
-    <input type="submit" value="Send">
+    <input type="submit" value="Gửi du lieu">
 </form>
-<h2>@ViewBag.TT</h2>
+<h3>Thông báo thông tin sinh viên: @ViewBag.Sinhvien</h3>

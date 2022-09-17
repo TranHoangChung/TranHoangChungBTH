@@ -1,0 +1,19 @@
+<h2>Thông tin cá nhân: @ViewBag.mess</h2>
+<form asp-action="Index">
+    <label>Họ tên: </label>
+    <input type="text" name="PersonName">
+    <br>
+    <label>Tuổi: </label>
+    <input type="text" name="PsAge">
+    <br>
+    <label>Địa chỉ: </label>
+    <input type="text" name="PsAdd">
+    <br>
+    <label>Giới tính: </label>
+    <br>
+    <input type="radio" name="PsGender" value="Nam" checked>Nam
+    <br>
+    <input type="radio" name="PsGender" value="Nữ">Nữ
+    <br>
+    <input class="btn btn-danger" type="submit" value="Save">
+</form>
