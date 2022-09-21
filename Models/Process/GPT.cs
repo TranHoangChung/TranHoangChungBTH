@@ -45,7 +45,7 @@ namespace TRANHOANGCHUNGBTH.Models.Process
             x1=(-b + Math.Sqrt(denta)/(2*a));
             
             x2=(-b - Math.Sqrt(denta)/(2*a));
-            message="PT co 2 nghiem : x1 =  " + x1 +" x2 = " + x2 ;
+            message="PT co 2 nghiem : x1 =  " + x1 +" x2 =  " + x2 ;
            }
 
         }
