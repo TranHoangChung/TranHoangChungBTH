@@ -9,6 +9,7 @@ namespace TRANHOANGCHUNGBTH.Controllers
         //Chuyen kieu du lieu
         //string x="100";=> y=int.Parse("100");
         GPT giai = new GPT();
+        StringProcess strPro = new StringProcess();
         public IActionResult Index()
         {
             
@@ -22,6 +23,18 @@ namespace TRANHOANGCHUNGBTH.Controllers
             double c=Convert.ToDouble(hesoC);
             string mess=giai.ptbh(a,b,c);
             ViewBag.thongbao=mess;
+            return View();
+        }
+        
+        public IActionResult xylychuoi()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult xulychuoi(string strInput)
+        {
+            string strResult = strPro(strInput);
+            ViewBag.thongbao=strResult;
             return View();
         }
     }
