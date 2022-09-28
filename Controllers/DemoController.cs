@@ -26,14 +26,14 @@ namespace TRANHOANGCHUNGBTH.Controllers
             return View();
         }
         
-        public IActionResult xylychuoi()
+        public IActionResult Xulychuoi()
         {
             return View();
         }
         [HttpPost]
-        public IActionResult xulychuoi(string strInput)
+        public IActionResult Xulychuoi(string strInput)
         {
-            string strResult = strPro(strInput);
+            string strResult = strPro.khoangtrang(strInput);
             ViewBag.thongbao=strResult;
             return View();
         }
